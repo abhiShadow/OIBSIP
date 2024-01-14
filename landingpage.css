@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-image: url("https://source.unsplash.com/1600x900/?electronics");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #ff6600;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product h3 {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.product p {
+    padding: 10px;
+    color: #777;
+}
+
+.product a {
+    display: block;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.product a:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
