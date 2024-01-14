@@ -1,0 +1,208 @@
+/* style.css */
+
+/* Reset some default styles */
+body {
+    padding-top: 0; /* Adjusted to remove extra space at the top */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+/* Home Section */
+.home-section {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.home-title {
+    font-size: 2.5em;
+    color: #343a40;
+}
+
+.home-subtitle {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: #343a40;
+}
+
+.section-subtitle {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+.section-text {
+    font-size: 1em;
+    color: #343a40;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    display: inline-block;
+    margin-right: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Services Section */
+.services-section {
+    padding: 60px 0;
+}
+
+.service-card {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-icon {
+    font-size: 3em;
+    color: #007bff;
+}
+
+.service-title {
+    font-size: 1.5em;
+    color: #343a40;
+}
+
+.service-text {
+    font-size: 1em;
+    color: #6c757d;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 0;
+}
+
+.project-card {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 123, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-title {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.project-text {
+    font-size: 1em;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 1.2em;
+    color: #343a40;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+/* Contact Info */
+.contact-info p {
+    font-size: 1em;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.port {
+    height: 120px;
+    width: 120px;
+}
+
+.container0 {
+    margin-top: 0%;
+    position: relative;
+    border-top: 0px;
+}
